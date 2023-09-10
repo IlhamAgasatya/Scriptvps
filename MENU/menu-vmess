@@ -1,0 +1,37 @@
+#!/bin/bash
+#Funnyvpn
+#Rerechan02
+#Rayzell25
+#Nuralfiya
+#em0zz
+#naravpn.com
+#indo-ssh.com
+#indossh
+#Skc
+clear
+#=========================================================================================================================
+clear
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e "             ═══[ VMESS ]═══"
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e " 1)  Create VMESS Account"
+echo -e " 2)  List Member VMESS Account"
+echo -e " 3)  Delete VMESS Account"
+echo -e " 4)  Cek User Login VMESS Account"
+echo -e " 5)  Renew VMESS Account"
+echo -e ""
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e " x)   MENU UTAMA"
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e ""
+read -p " Select menu :  "  opt
+echo -e ""
+case $opt in
+1) clear ; add-ws ; exit ;;
+2) clear ; member-vmess ; exit ;;
+3) clear ; del-ws ; exit ;;
+4) clear ; vmm ; exit ;;
+5) clear ; renew-ws ; exit ;;
+x) menu ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu-vmess ;;
+esac

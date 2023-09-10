@@ -1,0 +1,61 @@
+#!/bin/bash
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
+7200=$(systemctl status speed2 | grep active | cut -d ' ' $stat)
+if [ "$7200" = "active" ]; then
+re7="✅${NC}"
+else
+re7="❌${NC}"
+fi
+function start () {
+clear
+systemctl daemon-reload
+systemctl enable speed2
+systemctl restart speed2
+sleep 1
+clear
+menu
+}
+function stop () {
+clear
+systemctl stop speed2
+systemctl disable speed2
+sleep 1
+clear
+menu
+}
+if [[ "$cek" = "start" ]]; then
+sts="${Info}"
+else
+sts="${Error}"
+fi
+clear
+echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;41;36m            LIMIT BANDWITH SPEED            \E[0m"
+echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
+\033[1;37mLimit Bandwith Speed By Rerechan02\033[0m
+\033[1;37mTelegram : https://t.me/Rerechan02 / @Rerechan02\033[0m"
+echo ""
+echo -e "   Status : $re7"
+echo -e "
+ [\033[1;36m•1 \033[0m]  Start Limit
+ [\033[1;36m•2 \033[0m]  Stop Limit
+ [\033[1;36m•3 \033[0m]  Back To Main Menu"
+echo ""
+echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
+echo ""
+read -rp "Select menu : " -e num
+if [[ "$num" = "1" ]]; then
+start
+elif [[ "$num" = "2" ]]; then
+stop
+elif [[ "$num" = "3" ]]; then
+menu
+else
+clear
+echo " Please Enter The Correct Number!"
+sleep 0.5
+limit
+fi

@@ -1,0 +1,16 @@
+[Unit]
+Description=LIMIT-SPEED
+Documentation=https://indo-ssh.com
+After=syslog.target network-online.target
+
+[Service]
+User=root
+NoNewPrivileges=true
+ExecStart=/usr/local/bin/waduh -a eth0 -d 300000 -u 400000
+Restart=on-failure
+RestartPreventExitStatus=23
+LimitNPROC=10000
+LimitNOFILE=1000000
+
+[Install]
+WantedBy=multi-user.target

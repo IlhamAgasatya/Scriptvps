@@ -1,0 +1,37 @@
+#!/bin/bash
+#Funnyvpn
+#Rerechan02
+#Rayzell25
+#Nuralfiya
+#em0zz
+#naravpn.com
+#indo-ssh.com
+#indossh
+#Skc
+clear
+#=========================================================================================================================
+clear
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e "             ═══[ TROJAN ]═══"
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e " 1)  Create TROJAN Account"
+echo -e " 2)  List Member TROJAN Account"
+echo -e " 3)  Delete TROJAN Account"
+echo -e " 4)  Cek User Login TROJAN Account"
+echo -e " 5)  Renew TROJAN Account"
+echo -e ""
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e " x)   MENU UTAMA"
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e ""
+read -p " Select menu :  "  opt
+echo -e ""
+case $opt in
+1) clear ; add-tr ; exit ;;
+2) clear ; member-trojan ; exit ;;
+3) clear ; del-tr ; exit ;;
+4) clear ; trr ; exit ;;
+5) clear ; renew-tr ; exit ;;
+x) menu ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu-trojan ;;
+esac

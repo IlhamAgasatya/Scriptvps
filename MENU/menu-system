@@ -1,0 +1,39 @@
+#!/bin/bash
+#Funnyvpn
+#Rerechan02
+#Rayzell25
+#Nuralfiya
+#em0zz
+#naravpn.com
+#indo-ssh.com
+#indossh
+#Skc
+clear
+#=========================================================================================================================
+clear
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e "             ═══[ SYSTEM ]═══"
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e " 1)  Change Subdomain Vps"
+echo -e " 2)  Change DNS VPS"
+echo -e " 3)  Cek Cpu/Ram Usage"
+echo -e " 4)  Limit Speed VPS"
+echo -e " 5)  Renew Certificate"
+echo -e " 6)  Install Webmin Panel"
+echo -e ""
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e " x)   MENU UTAMA"
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e ""
+read -p " Select menu :  "  opt
+echo -e ""
+case $opt in
+1) clear ; addhost ; exit ;;
+2) clear ; dns ; exit ;;
+3) clear ; gotop ; exit ;;
+4) clear ; limit-speed ; exit ;;
+5) clear ; cert ; exit ;;
+6) clear ; webmin ; exit ;;
+x) menu ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu-system ;;
+esac

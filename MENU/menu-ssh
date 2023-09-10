@@ -1,0 +1,38 @@
+#!/bin/bash
+#Funnyvpn
+#Rerechan02
+#Rayzell25
+#Nuralfiya
+#em0zz
+#naravpn.com
+#indo-ssh.com
+#indossh
+#Skc
+clear
+#=========================================================================================================================
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e "             ═══[ SSH ]═══"
+echo -e "\e[32m════════════════════════════════════════" | lolcat
+echo -e " 1)  Create SSH Account"
+echo -e " 2)  Trial SSH Account"
+echo -e " 3)  Delete SSH Account"
+echo -e " 4)  Cek User Login SSH Account"
+echo -e " 5)  Renew SSH Account"
+echo -e " 6)  List Member SSH Account"
+echo -e ""
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e " x)   MENU UTAMA"
+echo -e "\e[1;32m══════════════════════════════════════════\e[m"
+echo -e ""
+read -p " Select menu :  "  opt
+echo -e ""
+case $opt in
+1) clear ; addssh ; exit ;;
+2) clear ; trial ; exit ;;
+3) clear ; hapus ; exit ;;
+4) clear ; cek ; exit ;;
+5) clear ; renew ; exit ;;
+6) clear ; member ; exit ;;
+x) menu ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
+esac
