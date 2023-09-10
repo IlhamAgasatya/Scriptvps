@@ -1,2 +1,17 @@
 # INSTALL
-<pre><code>sysctl apt update && apt upgrade -y && update-grub && sleep 2 && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt upgrade && apt install -y bzip2 gzip coreutils screen curl unzip && wget -q https://github.com/IlhamAgasatya/Scriptvps/blob/fb9685a5fc7169dcc6e53477e9a23db40c879383/INSTALL/setup.sh && chmod +x setup.sh && ./setup.sh
+### INSTALL SCRIPT
+***ROOT*** 
+ ```  
+ sudo su 
+ ``` 
+ ***TAHAP 1*** 
+ ``` 
+ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && apt install curl -y && apt install wget -y && apt install screen -y && ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && reboot 
+ ``` 
+ ***TAHAP 2*** 
+ ``` 
+ wget https://raw.githubusercontent.com/IlhamAgasatya/Scriptvps/setup.sh && chmod +x * && ./setup.sh 
+ ```
+### TESTED ON OS 
+- UBUNTU 18/20.04
+- DEBIAN 9/10
