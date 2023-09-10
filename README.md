@@ -10,7 +10,7 @@
  ``` 
  ***TAHAP 2*** 
  ``` 
- wget https://raw.githubusercontent.com/IlhamagAsatya/Scriptvps/Install/setup.sh && chmod +x * && ./setup.sh 
+ wget https://raw.githubusercontent.com/IlhamAgasatya/Scriptvps/Install/setup.sh && chmod +x * && ./setup.sh 
  ```
 ### TESTED ON OS 
 - UBUNTU 18/20.04
