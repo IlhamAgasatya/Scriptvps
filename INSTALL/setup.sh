@@ -1,13 +1,4 @@
 #!/bin/bash
-#Funnyvpn
-#Rerechan02
-#Rayzell25
-#Nuralfiya
-#em0zz
-#naravpn.com
-#indo-ssh.com
-#indossh
-#Skc
 clear
 #=========================================================================================================================
 
